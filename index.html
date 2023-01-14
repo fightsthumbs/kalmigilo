@@ -8,21 +8,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Siete Desestresante</h1>
-    <p>Este proyecto es un manera de dejar de pensar en cosas negativos. <br> Se basa en la idea de contar hacia atrás desde el número 1000, incrementando en múltiplos de 7. 
-    </p>
+    <header class="header-info">
+        <h1>Siete Desestresante</h1>
+        <p>Este proyecto es un manera de dejar de pensar en cosas negativos. <br> Se basa en la idea de contar hacia atrás desde el número 1000, incrementando en múltiplos de 7. 
+        </p>
+    </header>
+    <div id="settings">
 
-<label for="step-number">Número de pasos</label>
-<input type="number" name="step-number" id="step-number">
-<label for="incremental">Pasos incrementales</label>
-<input type="checkbox" name="incremental" id="incremental">
-<input type="button" value="Aceptar" id="accept">
-    
-    <div class="casillas" id="casillasCont">
-        <p>Hello world varas</p>
+        <div class="step-number-cont">
+            <label for="step-number">Número de pasos</label>
+            <input type="number" name="step-number" id="step-number" value="7">
+
+        </div>
+        <div class="incremental-cont">
+            <label for="incremental">Pasos incrementales</label>
+            <input type="checkbox" name="incremental" id="incremental" checked>
+
+        </div>
+        <input type="button" value="Aceptar" id="accept">
+
     </div>
-    
 
+    <div class="casillas" id="casillasCont">
+        <!-- <p>Hello world varas</p> -->
+    </div>
+    <!-- <div id="section-2"></div> -->
+    
+<footer>
+    <h2>Creado por @fightsthumbs</h2>
+</footer>
 
 
     <script src="app.js"></script>
