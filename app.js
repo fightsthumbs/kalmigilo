@@ -58,6 +58,7 @@ acceptButton.addEventListener("click", (e) => {
         let rightAnswer = x.target.attributes.rightanswer.value;
         if(userInput == rightAnswer) {
           x.target.setAttribute("class","right-green");
+          x.target.nextElementSibling.focus();
         } else {
           console.log("respuesta incorrecta")
         }

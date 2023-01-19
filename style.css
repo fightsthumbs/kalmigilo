@@ -39,11 +39,16 @@ h1 {
   margin-top: 50px;
   margin-bottom: 80px;
   max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(10, 75px);
+  gap: 5px;
+  
 
 }
 
 #settings{
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgb(170, 141, 141);
+  background-color: #7F7CAF;
   border-radius: 25px;
   padding: 30px;
   align-items: center;
@@ -54,8 +59,17 @@ h1 {
   height: 100px;
   display: flex;
   flex-direction: column;
+  box-shadow: 9px 9px 15px 0px rgba(0, 0, 0, 0.26);
 }
 
+
+#step-number {
+  width: 30px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 7px;
+  font-weight: bold;
+}
 
 
 .casillas > input {
@@ -71,7 +85,7 @@ h1 {
   
 }
 .right-green {
-  background-color: greenyellow !important; 
+  background-color: rgb(156, 206, 149) !important; 
   
 }
 
@@ -92,10 +106,25 @@ footer {
   text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.74);
 }
 
+a:visited {
+  color: var(--excepcional);
+}
+
+a:hover {
+  color:var(--text-main)
+}
+
 
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 -webkit-appearance: none;
 margin: 0;
+}
+
+#accept {
+  border-radius: 15px;
+  padding: 5px 25px;
+  cursor: pointer;
+  
 }
